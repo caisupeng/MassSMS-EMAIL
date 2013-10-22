@@ -30,7 +30,7 @@ import com.hanji.groupsending.ui.activity.SMSSendCounting;
 /**
  * Send Grouping SMS Page
  * 
- * @date 2013-10-15 обнГ9:20:20
+ * @date 2013-10-15
  */
 public class SendSMSFragment extends Fragment {
 

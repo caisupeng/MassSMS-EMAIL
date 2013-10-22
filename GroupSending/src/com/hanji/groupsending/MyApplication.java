@@ -12,7 +12,7 @@ import android.provider.ContactsContract.Data;
 /**
  * Custom Application exits in the whole life cycle
  * 
- * @date 2013-10-16 обнГ1:32:50
+ * @date 2013-10-16
  */
 public class MyApplication extends Application {
 

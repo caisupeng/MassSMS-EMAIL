@@ -29,7 +29,7 @@ import com.hanji.groupsending.adapter.PhoneContactsAdapter;
 /**
  * Select SMS Contacts Page
  * 
- * @date 2013-10-15 обнГ7:45:43
+ * @date 2013-10-15
  */
 public class SelectSMSContacts extends ActionBarActivity {
 	private ProgressBar mProgressBar;

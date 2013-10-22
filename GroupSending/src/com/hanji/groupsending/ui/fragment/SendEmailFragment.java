@@ -37,7 +37,7 @@ import com.hanji.groupsending.adapter.SelectedEmailContactsAdapter;
 /**
  * Send Email Page
  * 
- * @date 2013-10-20 ÏÂÎç3:13:27
+ * @date 2013-10-20
  */
 public class SendEmailFragment extends Fragment {
 

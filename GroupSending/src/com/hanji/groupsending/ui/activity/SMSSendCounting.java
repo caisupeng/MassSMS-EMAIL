@@ -26,7 +26,7 @@ import com.hanji.groupsending.R;
 /**
  * Send SMS And Count Something In This Page
  * 
- * @date 2013-10-19 обнГ8:42:58
+ * @date 2013-10-19
  */
 public class SMSSendCounting extends ActionBarActivity {
 	private ArrayList<ContactBean> mSMSContacts;

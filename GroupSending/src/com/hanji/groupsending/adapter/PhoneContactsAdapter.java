@@ -15,7 +15,7 @@ import com.hanji.groupsending.R;
 /**
  * Adapter For ListView Showing Phone Contacts
  * 
- * @date 2013-10-16 обнГ3:58:42
+ * @date 2013-10-16
  */
 public class PhoneContactsAdapter extends BaseAdapter {
 	// private Context mContext;

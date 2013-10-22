@@ -23,7 +23,7 @@ import com.hanji.groupsending.ui.fragment.SendSMSFragment;
 /**
  * Main Page
  * 
- * @date 2013-10-14 обнГ8:02:12
+ * @date 2013-10-14
  */
 public class MainActivity extends ActionBarActivity implements TabListener {
 

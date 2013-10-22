@@ -16,7 +16,7 @@ import android.widget.TextView;
 /**
  * Adapter For ListView Showing Email Contacts
  * 
- * @date 2013-10-17 обнГ12:05:10
+ * @date 2013-10-17
  */
 public class EmailContactsAdapter extends BaseAdapter {
 	// private Context mContext;

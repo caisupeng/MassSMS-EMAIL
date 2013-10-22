@@ -16,7 +16,7 @@ import android.widget.ImageView;
 /**
  * Adapter For Showing Selected Names Array
  * 
- * @date 2013-10-17 обнГ2:21:36
+ * @date 2013-10-17
  */
 public class SelectedContactsAdapter extends BaseAdapter {
 
