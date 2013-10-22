@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/bt_emailcontacts_add" >
+
+        <ProgressBar
+            android:id="@+id/loadingbar_emailcontacts"
+            style="?android:attr/progressBarStyleLargeInverse"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:visibility="visible" />
+
+        <ListView
+            android:id="@+id/lv_emailcontacts"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:cacheColorHint="#00000000" />
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/bt_emailcontacts_add"
+        android:layout_width="match_parent"
+        android:layout_height="50.0dip"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/bottom_button_back"
+        android:text="@string/bt_confirm_add"
+        android:textSize="@dimen/bottom_button_text_size"
+        android:textStyle="normal" />
+
+</RelativeLayout>

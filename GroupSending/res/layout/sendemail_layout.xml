@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/sms_top"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_margin="2dp" >
+
+        <TextView
+            android:id="@+id/tv_email_selectedcounting"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/tv_email_selectedpeople"
+            android:text="@string/none"
+            android:textColor="@color/orange"
+            android:textSize="@dimen/fst_count_size" />
+
+        <TextView
+            android:id="@+id/tv_email_selectedpeople"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="12dp"
+            android:text="@string/shoujianren"
+            android:textColor="@color/gray"
+            android:textSize="@dimen/fst_count_size" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rlayout_email_contacts_selected"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_below="@+id/sms_top"
+        android:layout_gravity="top|center_horizontal"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/shape_corner_gridview"
+        android:cacheColorHint="#00000000"
+        android:padding="2dip" >
+
+        <TextView
+            android:id="@+id/tv_email_choosenone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:layout_marginTop="20dp"
+            android:gravity="center"
+            android:text="@string/choose_none"
+            android:textColor="@color/gray"
+            android:textSize="@dimen/choose_none_size" />
+
+        <GridView
+            android:id="@+id/gv_email_selected"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/gridview_height"
+            android:layout_below="@id/tv_email_choosenone"
+            android:layout_margin="3dp"
+            android:gravity="center|center_vertical"
+            android:numColumns="3"
+            android:padding="5dip"
+            android:scrollbarStyle="outsideOverlay" >
+        </GridView>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rlayout_emailsubject_tip"
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:layout_below="@+id/rlayout_email_contacts_selected"
+        android:layout_margin="2dp"
+        android:layout_marginTop="5dp" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="12dp"
+            android:text="@string/email_subject"
+            android:textColor="@color/gray"
+            android:textSize="@dimen/fst_count_size" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rlayout_emailsubject"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_below="@+id/rlayout_emailsubject_tip"
+        android:layout_gravity="top|center_horizontal"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/shape_corner_gridview"
+        android:cacheColorHint="#00000000"
+        android:padding="2dip" >
+
+        <EditText
+            android:id="@+id/et_emailsubject"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#00000000"
+            android:gravity="top"
+            android:imeOptions="actionDone"
+            android:padding="10dp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/email_contentcounting"
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:layout_below="@+id/rlayout_emailsubject"
+        android:layout_margin="2dp"
+        android:layout_marginTop="5dp" >
+
+        <ImageView
+            android:id="@+id/iv_email_attachment"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/tv_email_attach"
+            android:clickable="true"
+            android:src="@drawable/delete"
+            android:visibility="invisible" />
+
+        <TextView
+            android:id="@+id/tv_email_attach"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/tv_emailcontent_title"
+            android:text="@string/has_attatchment"
+            android:textColor="@color/orange"
+            android:textSize="@dimen/fst_count_size"
+            android:visibility="invisible" />
+
+        <TextView
+            android:id="@+id/tv_emailcontent_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="12dp"
+            android:text="@string/zhengwen"
+            android:textColor="@color/gray"
+            android:textSize="@dimen/fst_count_size" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rlayout_email_content"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:layout_above="@+id/bt_email_bottom"
+        android:layout_below="@+id/email_contentcounting"
+        android:layout_gravity="top|center_horizontal"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/shape_corner_gridview"
+        android:cacheColorHint="#00000000"
+        android:padding="2dip" >
+
+        <EditText
+            android:id="@+id/et_emailcontent"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#00000000"
+            android:gravity="top"
+            android:imeOptions="actionDone"
+            android:padding="10dp" />
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/bt_email_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="50.0dip"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/bottom_button_back"
+        android:text="@string/bt_send_email"
+        android:textSize="@dimen/bottom_button_text_size"
+        android:textStyle="normal" />
+
+</RelativeLayout>

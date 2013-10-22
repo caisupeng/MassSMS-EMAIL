@@ -1,0 +1,12 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:menu="http://schemas.android.com/apk/res-auto" >
+
+    <item
+        android:id="@+id/action_attach"
+        android:icon="@drawable/email_attachment"
+        android:orderInCategory="1"
+        android:title="@string/select_attach"
+        menu:showAsAction="always">
+    </item>
+
+</menu>

@@ -1,0 +1,12 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:menu="http://schemas.android.com/apk/res-auto" >
+
+    <item
+        android:id="@+id/action_contacts"
+        android:icon="@drawable/e_mail"
+        android:orderInCategory="2"
+        android:title="@string/select_contacts"
+        menu:showAsAction="always">
+    </item>
+
+</menu>
